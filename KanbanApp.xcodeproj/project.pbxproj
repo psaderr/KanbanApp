@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C3B2BE252DADBC5C00EBD661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B2BE0F2DADBC5900EBD661 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B2BE162DADBC5900EBD661;
+			remoteInfo = KanbanApp;
+		};
+		C3B2BE2F2DADBC5C00EBD661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B2BE0F2DADBC5900EBD661 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B2BE162DADBC5900EBD661;
+			remoteInfo = KanbanApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3B2BE172DADBC5900EBD661 /* KanbanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanbanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B2BE242DADBC5C00EBD661 /* KanbanAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanbanAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B2BE2E2DADBC5C00EBD661 /* KanbanAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanbanAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C3B2BE192DADBC5900EBD661 /* KanbanApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KanbanApp;
+			sourceTree = "<group>";
+		};
+		C3B2BE272DADBC5C00EBD661 /* KanbanAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KanbanAppTests;
+			sourceTree = "<group>";
+		};
+		C3B2BE312DADBC5C00EBD661 /* KanbanAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KanbanAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3B2BE142DADBC5900EBD661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B2BE212DADBC5C00EBD661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B2BE2B2DADBC5C00EBD661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3B2BE0E2DADBC5900EBD661 = {
+			isa = PBXGroup;
+			children = (
+				C3B2BE192DADBC5900EBD661 /* KanbanApp */,
+				C3B2BE272DADBC5C00EBD661 /* KanbanAppTests */,
+				C3B2BE312DADBC5C00EBD661 /* KanbanAppUITests */,
+				C3B2BE182DADBC5900EBD661 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3B2BE182DADBC5900EBD661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3B2BE172DADBC5900EBD661 /* KanbanApp.app */,
+				C3B2BE242DADBC5C00EBD661 /* KanbanAppTests.xctest */,
+				C3B2BE2E2DADBC5C00EBD661 /* KanbanAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3B2BE162DADBC5900EBD661 /* KanbanApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B2BE382DADBC5C00EBD661 /* Build configuration list for PBXNativeTarget "KanbanApp" */;
+			buildPhases = (
+				C3B2BE132DADBC5900EBD661 /* Sources */,
+				C3B2BE142DADBC5900EBD661 /* Frameworks */,
+				C3B2BE152DADBC5900EBD661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C3B2BE192DADBC5900EBD661 /* KanbanApp */,
+			);
+			name = KanbanApp;
+			packageProductDependencies = (
+			);
+			productName = KanbanApp;
+			productReference = C3B2BE172DADBC5900EBD661 /* KanbanApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3B2BE232DADBC5C00EBD661 /* KanbanAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B2BE3B2DADBC5C00EBD661 /* Build configuration list for PBXNativeTarget "KanbanAppTests" */;
+			buildPhases = (
+				C3B2BE202DADBC5C00EBD661 /* Sources */,
+				C3B2BE212DADBC5C00EBD661 /* Frameworks */,
+				C3B2BE222DADBC5C00EBD661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3B2BE262DADBC5C00EBD661 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C3B2BE272DADBC5C00EBD661 /* KanbanAppTests */,
+			);
+			name = KanbanAppTests;
+			packageProductDependencies = (
+			);
+			productName = KanbanAppTests;
+			productReference = C3B2BE242DADBC5C00EBD661 /* KanbanAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3B2BE2D2DADBC5C00EBD661 /* KanbanAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B2BE3E2DADBC5C00EBD661 /* Build configuration list for PBXNativeTarget "KanbanAppUITests" */;
+			buildPhases = (
+				C3B2BE2A2DADBC5C00EBD661 /* Sources */,
+				C3B2BE2B2DADBC5C00EBD661 /* Frameworks */,
+				C3B2BE2C2DADBC5C00EBD661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3B2BE302DADBC5C00EBD661 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C3B2BE312DADBC5C00EBD661 /* KanbanAppUITests */,
+			);
+			name = KanbanAppUITests;
+			packageProductDependencies = (
+			);
+			productName = KanbanAppUITests;
+			productReference = C3B2BE2E2DADBC5C00EBD661 /* KanbanAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3B2BE0F2DADBC5900EBD661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					C3B2BE162DADBC5900EBD661 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					C3B2BE232DADBC5C00EBD661 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = C3B2BE162DADBC5900EBD661;
+					};
+					C3B2BE2D2DADBC5C00EBD661 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = C3B2BE162DADBC5900EBD661;
+					};
+				};
+			};
+			buildConfigurationList = C3B2BE122DADBC5900EBD661 /* Build configuration list for PBXProject "KanbanApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3B2BE0E2DADBC5900EBD661;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C3B2BE182DADBC5900EBD661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3B2BE162DADBC5900EBD661 /* KanbanApp */,
+				C3B2BE232DADBC5C00EBD661 /* KanbanAppTests */,
+				C3B2BE2D2DADBC5C00EBD661 /* KanbanAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3B2BE152DADBC5900EBD661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B2BE222DADBC5C00EBD661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B2BE2C2DADBC5C00EBD661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3B2BE132DADBC5900EBD661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B2BE202DADBC5C00EBD661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B2BE2A2DADBC5C00EBD661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3B2BE262DADBC5C00EBD661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B2BE162DADBC5900EBD661 /* KanbanApp */;
+			targetProxy = C3B2BE252DADBC5C00EBD661 /* PBXContainerItemProxy */;
+		};
+		C3B2BE302DADBC5C00EBD661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B2BE162DADBC5900EBD661 /* KanbanApp */;
+			targetProxy = C3B2BE2F2DADBC5C00EBD661 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C3B2BE362DADBC5C00EBD661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3B2BE372DADBC5C00EBD661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3B2BE392DADBC5C00EBD661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahrsolucoes.KanbanApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3B2BE3A2DADBC5C00EBD661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahrsolucoes.KanbanApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3B2BE3C2DADBC5C00EBD661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahrsolucoes.KanbanAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanbanApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KanbanApp";
+			};
+			name = Debug;
+		};
+		C3B2BE3D2DADBC5C00EBD661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahrsolucoes.KanbanAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanbanApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KanbanApp";
+			};
+			name = Release;
+		};
+		C3B2BE3F2DADBC5C00EBD661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahrsolucoes.KanbanAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KanbanApp;
+			};
+			name = Debug;
+		};
+		C3B2BE402DADBC5C00EBD661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahrsolucoes.KanbanAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KanbanApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3B2BE122DADBC5900EBD661 /* Build configuration list for PBXProject "KanbanApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B2BE362DADBC5C00EBD661 /* Debug */,
+				C3B2BE372DADBC5C00EBD661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3B2BE382DADBC5C00EBD661 /* Build configuration list for PBXNativeTarget "KanbanApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B2BE392DADBC5C00EBD661 /* Debug */,
+				C3B2BE3A2DADBC5C00EBD661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3B2BE3B2DADBC5C00EBD661 /* Build configuration list for PBXNativeTarget "KanbanAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B2BE3C2DADBC5C00EBD661 /* Debug */,
+				C3B2BE3D2DADBC5C00EBD661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3B2BE3E2DADBC5C00EBD661 /* Build configuration list for PBXNativeTarget "KanbanAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B2BE3F2DADBC5C00EBD661 /* Debug */,
+				C3B2BE402DADBC5C00EBD661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3B2BE0F2DADBC5900EBD661 /* Project object */;
+}
