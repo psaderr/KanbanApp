@@ -1,17 +1,18 @@
-//
-//  KanbanAppApp.swift
-//  KanbanApp
-//
-//  Created by Alif on 14/04/25.
-//
-
 import SwiftUI
 
 @main
-struct KanbanAppApp: App {
+struct KanbanApp: App {
+    @StateObject var authViewModel = AuthViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authViewModel.isAuthenticated {
+                KanbanBoardView()
+                    .environmentObject(authViewModel)
+            } else {
+                LoginView()
+                    .environmentObject(authViewModel)
+            }
         }
     }
 }

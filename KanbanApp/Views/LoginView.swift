@@ -2,56 +2,75 @@ import SwiftUI
 
 struct LoginView: View {
     @EnvironmentObject var auth: AuthViewModel
-    @State private var email = ""
-    @State private var password = ""
-    @State private var errorMessage = ""
+    @State private var email: String = ""
+    @State private var password: String = ""
+    @State private var errorMessage: String = ""
     
     var body: some View {
-        VStack(spacing: 20) {
-            // Exibe a logo (certifique-se que a imagem "logo" esteja nos Assets)
-            Image("logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [Color(hex: "7B38D8"), Color(hex: "5186F7")]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea()
             
-            // Campo para e‑mail
-            TextField("E-mail", text: $email)
-                .padding()
-                .background(Color.white.opacity(0.9))
-                .cornerRadius(8)
-                .autocapitalization(.none)
-            
-            // Campo para senha (entrada segura)
-            SecureField("Senha", text: $password)
-                .padding()
-                .background(Color.white.opacity(0.9))
-                .cornerRadius(8)
-            
-            // Exibe mensagem de erro, se houver
-            if !errorMessage.isEmpty {
-                Text(errorMessage)
-                    .foregroundColor(.red)
-            }
-            
-            // Botão de login
-            Button(action: {
-                auth.login(email: email, password: password)
-            }) {
-                Text("Entrar")
-                    .foregroundColor(.white)
+            VStack(spacing: 24) {
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 150, height: 150)
+                    .shadow(radius: 10)
+                
+                TextField("Digite seu e-mail", text: $email)
                     .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .cornerRadius(8)
+                    .background(Color.white.opacity(0.9))
+                    .cornerRadius(10)
+                    .keyboardType(.emailAddress)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+                    .shadow(color: .black.opacity(0.1), radius: 5, x: 0, y: 4)
+                
+                SecureField("Digite sua senha", text: $password)
+                    .padding()
+                    .background(Color.white.opacity(0.9))
+                    .cornerRadius(10)
+                    .shadow(color: .black.opacity(0.1), radius: 5, x: 0, y: 4)
+                
+                if !errorMessage.isEmpty {
+                    Text(errorMessage)
+                        .foregroundColor(.red)
+                        .font(.footnote)
+                        .padding(.horizontal)
+                }
+                
+                Button(action: {
+                    errorMessage = ""
+                    guard !email.isEmpty, !password.isEmpty else {
+                        errorMessage = "Preencha e-mail e senha."
+                        return
+                    }
+                    auth.login(email: email, password: password)
+                }) {
+                    Text("Entrar")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(
+                            LinearGradient(
+                                gradient: Gradient(colors: [Color(hex: "5186F7"), Color(hex: "7B38D8")]),
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .cornerRadius(10)
+                        .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 4)
+                }
+                .padding(.top, 10)
             }
+            .padding(32)
         }
-        .padding()
-        .background(
-            // Fundo com gradiente
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]),
-                           startPoint: .top, endPoint: .bottom)
-                .ignoresSafeArea()
-        )
     }
 }
 

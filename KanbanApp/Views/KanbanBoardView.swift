@@ -1,36 +1,69 @@
 import SwiftUI
 
-struct KanbanListView: View {
+struct KanbanBoardView: View {
     @State private var cards: [Card] = []
-    @State private var showingCreateCard = false
-    @EnvironmentObject var auth: AuthViewModel
+    
+    // Defina os 4 status do quadro Kanban, conforme seu backend
+    let statuses = ["nova", "pendente", "execucao", "finalizada"]
     
     var body: some View {
         NavigationView {
-            List(cards) { card in
-                VStack(alignment: .leading) {
-                    Text(card.title)
-                        .font(.headline)
-                    Text(card.status)
-                        .font(.subheadline)
+            ZStack {
+                // Fundo gradiente igual ao LoginView
+                LinearGradient(
+                    gradient: Gradient(colors: [Color(hex: "7B38D8"), Color(hex: "5186F7")]),
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .ignoresSafeArea()
+                
+                ScrollView(.horizontal) {
+                    HStack(alignment: .top, spacing: 16) {
+                        ForEach(statuses, id: \.self) { status in
+                            VStack {
+                                Text(titleForStatus(status))
+                                    .font(.headline)
+                                    .padding()
+                                ScrollView {
+                                    ForEach(cards.filter { $0.status == status }) { card in
+                                        CardView(card: card)
+                                            .padding(.vertical, 4)
+                                    }
+                                }
+                            }
+                            .frame(width: 300)
+                            .background(Color.white.opacity(0.8))
+                            .cornerRadius(10)
+                            .shadow(radius: 4)
+                        }
+                    }
+                    .padding()
                 }
             }
-            .navigationTitle("Kanban")
-            .navigationBarItems(trailing:
-                Button(action: {
-                    showingCreateCard.toggle()
-                }) {
-                    Image(systemName: "plus")
-                }
-            )
+            .navigationTitle("Quadro Kanban")
+            .navigationBarItems(trailing: Button(action: {
+                // Ação para abrir a tela de criação de card pode ser adicionada aqui.
+            }, label: {
+                Image(systemName: "plus")
+            }))
             .onAppear {
                 fetchCards()
             }
-            // Abre a tela de criação de card como uma sheet
-            .sheet(isPresented: $showingCreateCard) {
-                CreateCardView()
-                    .environmentObject(auth)
-            }
+        }
+    }
+    
+    func titleForStatus(_ status: String) -> String {
+        switch status {
+        case "nova":
+            return "Nova Atividade"
+        case "pendente":
+            return "Atividade Pendente"
+        case "execucao":
+            return "Atividade em Execução"
+        case "finalizada":
+            return "Atividade Finalizada"
+        default:
+            return status.capitalized
         }
     }
     
@@ -43,8 +76,8 @@ struct KanbanListView: View {
     }
 }
 
-struct KanbanListView_Previews: PreviewProvider {
+struct KanbanBoardView_Previews: PreviewProvider {
     static var previews: some View {
-        KanbanListView().environmentObject(AuthViewModel())
+        KanbanBoardView()
     }
 }
