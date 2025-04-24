@@ -1,12 +1,3 @@
-<!--
-  ┌─────────────────────────────────────────────────────────────┐
-  │           KanbanApp – Mobile Client iOS/SwiftUI            │
-  └─────────────────────────────────────────────────────────────┘
--->
-
-<p align="center">
-  <img height="120" src="Assets.xcassets/AppIcon.appiconset/kanban.png" alt="KanbanApp logo">
-</p>
 
 <h1 align="center">KanbanApp</h1>
 
